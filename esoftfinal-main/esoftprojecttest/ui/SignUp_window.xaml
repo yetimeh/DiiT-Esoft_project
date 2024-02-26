@@ -1,0 +1,147 @@
+﻿<Window x:Class="esoftprojecttest.SignUp_window"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:esoftprojecttest"
+      mc:Ignorable="d" WindowStartupLocation="CenterScreen" WindowStyle="None"  AllowsTransparency="True" Background="Transparent"
+      Title="Page1" Height="700" Width="800">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.5*"/>
+            <ColumnDefinition Width="1.8*"/>
+        </Grid.ColumnDefinitions>
+
+        <Border CornerRadius="10 0 0 10">
+            <Border.Background>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                    <GradientStop Color="#0099cc" Offset="1"/>
+                    <!-- <GradientStop Color="#3AADA1" Offset="1"/> -->
+                </LinearGradientBrush>
+            </Border.Background>
+
+            <StackPanel VerticalAlignment="Center">
+                <TextBlock Text="SaleSync &#10; POS" Style="{StaticResource ResourceKey=titleText}" Foreground="#ffffff" RenderTransformOrigin="0.5,0.5" Height="96"/>
+            </StackPanel>
+        </Border>
+
+        <Border Background="#ffffff" Grid.Column="1" CornerRadius="0 10 10 0">
+            <StackPanel>
+                <StackPanel>
+                    <TextBlock Text="Cashier Register" Style="{StaticResource titleText}" Margin="40 20 " Foreground="#38ad98"></TextBlock>
+                </StackPanel>
+
+                <StackPanel HorizontalAlignment="Center">
+                    <Image x:Name="proPic" Source="Resources/profile.png" Width="150" Height="150"></Image>
+                    <Button Content="Upload Image" Margin="70 10 " Style="{StaticResource mainbutton}" Width="150" Height="50" ></Button>
+                </StackPanel>
+
+                
+                
+                <StackPanel>
+                    <Border BorderThickness="1" BorderBrush="#acb0af" Margin="200 15 " CornerRadius="5">
+                        <Grid Margin="7 9">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="auto"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                            </Grid.RowDefinitions>
+                            <Image Source="/Resources/user.png" Height="20"/>
+                            <TextBlock x:Name="firstname" MouseDown="firstname_MouseDown" Text="First Name" Style="{StaticResource hintText }"/>
+                            <TextBox x:Name="FName" TextChanged="FName_TextChanged"  Style="{StaticResource textBox}"/>
+                        </Grid>
+                    </Border>
+                </StackPanel>
+
+                <StackPanel>
+                    <Border BorderThickness="1" BorderBrush="#acb0af" Margin="200 9 " CornerRadius="5">
+                        <Grid Margin="7 9">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="auto"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                            </Grid.RowDefinitions>
+                            <Image Source="/Resources/user.png" Height="20"/>
+                            <TextBlock x:Name="lastname" MouseDown="lastname_MouseDown" Text="Last Name" Style="{StaticResource hintText }"/>
+                            <TextBox x:Name="LName" TextChanged="LName_TextChanged"  Style="{StaticResource textBox}"/>
+                        </Grid>
+                    </Border>
+                </StackPanel>
+
+                <StackPanel>
+                    <Border BorderThickness="1" BorderBrush="#acb0af" Margin="200 9 " CornerRadius="5">
+                        <Grid Margin="7 9">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="auto"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                            </Grid.RowDefinitions>
+                            <Image Source="/Resources/id-card.png" Height="20"/>
+                            <TextBlock x:Name="NIC" MouseDown="NIC_MouseDown" Text="NIC" Style="{StaticResource hintText }"/>
+                            <TextBox x:Name="Ncard"  TextChanged="Ncard_TextChanged" Style="{StaticResource textBox}"/>
+                        </Grid>
+                    </Border>
+                </StackPanel>
+
+<<<<<<< HEAD:esoftprojecttest/SIGNIN_window.xaml
+                <StackPanel>
+                    <Border BorderThickness="1" BorderBrush="#acb0af" Margin="200 9 " CornerRadius="5">
+                        <Grid Margin="7 9">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="auto"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                            </Grid.RowDefinitions>
+                            <Image Source="/Resources/location-pin.png" Height="20"/>
+                            <TextBlock x:Name="locationtext" MouseDown="locationtext_MouseDown" Text="Location" Style="{StaticResource hintText }"/>
+                            <TextBox x:Name="locationpin"  TextChanged="locationpin_TextChanged"  Style="{StaticResource textBox}"/>
+                        </Grid>
+                    </Border>
+                </StackPanel>
+=======
+                <StackPanel/>
+>>>>>>> 78b37b3c6680e28641ab1624b62d3189abcbdb77:esoftprojecttest/ui/SignUp_window.xaml
+
+                <StackPanel>
+                    <Border BorderThickness="1" BorderBrush="#acb0af" Margin="200 9 " CornerRadius="5">
+                        <Grid Margin="7 9">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="auto"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                            </Grid.RowDefinitions>
+                            <Image Source="/Resources/phone-call.png" Height="20"/>
+                            <TextBlock x:Name="phone_number" MouseDown="phone_number_MouseDown" Text="Phone Number" Style="{StaticResource hintText }"/>
+                            <TextBox x:Name="Pnumber" TextChanged="Pnumber_TextChanged"  Style="{StaticResource textBox}"/>
+                        </Grid>
+                    </Border>
+                </StackPanel>
+
+                <DockPanel HorizontalAlignment="Center">
+                    <Button Style="{StaticResource mainbutton}" Content="Cancle" Margin="50 10 " Height="50"></Button>
+                    <Button Style="{StaticResource mainbutton}" Content="Register" Margin="50 10 "></Button>
+                </DockPanel> 
+                    
+
+            </StackPanel>
+            
+            
+        </Border>
+    </Grid>
+</Window>

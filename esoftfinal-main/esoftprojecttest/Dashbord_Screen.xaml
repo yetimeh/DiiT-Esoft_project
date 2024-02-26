@@ -1,0 +1,46 @@
+﻿<Window x:Class="esoftprojecttest.Dashbord_Screen"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:esoftprojecttest"
+        mc:Ignorable="d" WindowStyle="None" WindowStartupLocation="CenterScreen" AllowsTransparency="True" Background="Transparent"
+        Title="Dashbord_Screen" Height="500" Width="1100">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.4*"/>
+            <ColumnDefinition Width="1.8*"/>
+        </Grid.ColumnDefinitions>
+
+        <Border CornerRadius="10 0 0 10">
+            <Border.Background>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                    <GradientStop Color="#0099cc" Offset="1"/>
+                    <!-- <GradientStop Color="#3AADA1" Offset="1"/> -->
+                </LinearGradientBrush>
+            </Border.Background>
+
+            <StackPanel HorizontalAlignment="Center">
+                <TextBlock Text="SaleSync &#10; POS" Style="{StaticResource ResourceKey=titleText}" Foreground="#ffffff" RenderTransformOrigin="0.5,0.5" FontSize="30" Height="96"/>
+                <Button Content="Dashbord" Style="{StaticResource dashbordbuttons}"></Button>
+                <Button Content="Inventory" Style="{StaticResource dashbordbuttons}"></Button>
+                
+            </StackPanel>
+        </Border>
+
+        <Border Background="#ffffff" Grid.Column="1" CornerRadius="0 10 10 0">
+            <Grid>
+                <DataGrid x:Name="Datagrid" IsReadOnly="True" AutoGenerateColumns="False" Margin="10" Height="300" Width="800">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="ItemCode" MinWidth="150" Width="*"/>
+                        <DataGridTextColumn Header="ItemName" MinWidth="200" Width="*"/>
+                        <DataGridTextColumn Header="Price" MinWidth="150"/>
+                        <DataGridTextColumn Header="Quantity" MinWidth="80" />
+                        
+                    </DataGrid.Columns>
+                </DataGrid>
+            </Grid>
+        </Border>
+        
+    </Grid>
+</Window>

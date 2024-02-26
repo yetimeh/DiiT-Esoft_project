@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+<<<<<<< HEAD
+    <Compile Update="Dashbord_Screen.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="SIGNIN_window.xaml.cs">
+=======
+    <Compile Update="ui\SignUp_window.xaml.cs">
+>>>>>>> 78b37b3c6680e28641ab1624b62d3189abcbdb77
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+<<<<<<< HEAD
+    <Page Update="Dashbord_Screen.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Login_window.xaml">
+=======
+    <Page Update="ui\Login_window.xaml">
+>>>>>>> 78b37b3c6680e28641ab1624b62d3189abcbdb77
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ui\SignUp_window.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>
