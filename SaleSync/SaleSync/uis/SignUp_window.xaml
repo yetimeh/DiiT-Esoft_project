@@ -136,7 +136,7 @@
                 </StackPanel>
 
                 <DockPanel HorizontalAlignment="Center">
-                    <Button Style="{StaticResource mainbutton}" Click="calcle_click" Content="Cancle" Margin="50 10 " Height="50"></Button>
+                    <Button Style="{StaticResource mainbutton}" Click="cancel_click" Content="Cancel" Margin="50 10 " Height="50"></Button>
                     <Button Style="{StaticResource mainbutton}" Click="register_click" Content="Register" Margin="50 10 "></Button>
                 </DockPanel> 
                     

@@ -173,39 +173,7 @@
                 </Grid>
             </StackPanel>
         </Border>
-        <Border CornerRadius="10 10 10 10" Grid.Column="1">
-            <StackPanel Margin="10 40">
 
-                <StackPanel>
-                    <Border BorderThickness="1" BorderBrush="#707573" Margin="50 7 " CornerRadius="5">
-                        <Grid Margin="7 5">
-                            <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="auto"/>
-                                <ColumnDefinition Width="*"/>
-                            </Grid.ColumnDefinitions>
-                            <Grid.RowDefinitions>
-                                <RowDefinition Height="Auto"/>
-                                <RowDefinition Height="Auto"/>
-                            </Grid.RowDefinitions>
-
-                            <TextBlock x:Name="cost_text" MouseDown="cost_text_MouseDown" Text="Cost Input" Style="{StaticResource hintText }"/>
-                            <TextBox x:Name="cost_txt" TextChanged="cost_txt_TextChanged"  Style="{StaticResource textBox}"/>
-                        </Grid>
-                    </Border>
-                </StackPanel>
-
-                <Button Click="total_expences_click" Content="Total Expences" Style="{StaticResource dashbordbuttons}" FontSize="13" Width="131" Height="39" Margin="5"></Button>
-                
-                <DockPanel>
-                    <TextBlock DockPanel.Dock="Left"  Text="Expences : " FontSize="20" Style="{StaticResource hintText}"></TextBlock>
-                    <TextBlock DockPanel.Dock="Right" x:Name="expences_txt" Text="00.00" FontSize="20" Style="{StaticResource hintText}"></TextBlock>
-                   
-                </DockPanel>
-
-                
-            </StackPanel>
-        </Border>
-        
 
 
 

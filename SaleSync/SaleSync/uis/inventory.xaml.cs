@@ -124,26 +124,26 @@ namespace SaleSync.uis
 			}
 		}
 
+        private void inventory_enter_data_click(object sender, RoutedEventArgs e)
+        {
 
-		// cost 
-		private void cost_text_MouseDown(object sender, MouseButtonEventArgs e)
-		{
-			cost_txt.Focus();
-		}
+        }
 
-		private void cost_txt_TextChanged(object sender, TextChangedEventArgs e)
-		{
-			if (!string.IsNullOrEmpty(cost_txt.Text) && cost_txt.Text.Length > 0)
-			{
-				cost_text.Visibility = Visibility.Collapsed;
-			}
-			else
-			{
-				cost_text.Visibility = Visibility.Visible;
-			}
-		}		
+        private void inventory_clear_fields_click(object sender, RoutedEventArgs e)
+        {
 
-	}
+        }
+
+        private void inventory_exit_click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void inventory_add_to_database_click(object sender, RoutedEventArgs e)
+        {
+
+        }
+    }
 
    
 }

@@ -24,40 +24,32 @@ namespace esoftprojecttest
             InitializeComponent();
         }
 
-		private void itemcode_text_MouseDown(object sender, MouseButtonEventArgs e)
-		{
-			ICode_txt.Focus();
-		}
 
 
-		private void ICode_txt_textchanged(object sender, TextChangedEventArgs e)
+        private void admin_inventory_click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void admin_history_click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void admin_my_profile_click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+		private void admin_logout_click(object sender, RoutedEventArgs e)
 		{
-			if (!string.IsNullOrEmpty(ICode_txt.Text) && ICode_txt.Text.Length > 0)
-			{
-				itemcode_text.Visibility = Visibility.Collapsed;
-			}
-			else
-			{
-				itemcode_text.Visibility = Visibility.Visible;
-			}
+
 		}
 
-		//quantity
-		private void quantity_text_MouseDown(object sender, MouseButtonEventArgs e)
+		private void admin_signup_click(object sender, RoutedEventArgs e)
 		{
-			quantity_txt.Focus();
-		}
 
-		private void quantity_txt_TextChanged(object sender, TextChangedEventArgs e)
-		{
-			if (!string.IsNullOrEmpty(quantity_txt.Text) && quantity_txt.Text.Length > 0)
-			{
-				quantity_text.Visibility = Visibility.Collapsed;
-			}
-			else
-			{
-				quantity_text.Visibility = Visibility.Visible;
-			}
 		}
-	}
+      
+    }
 }

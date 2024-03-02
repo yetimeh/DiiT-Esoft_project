@@ -61,5 +61,19 @@ namespace SaleSync.uis
 			}
 		}
 
-	}
+        private void cashier_my_profile_click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void sell_click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void enter_click(object sender, RoutedEventArgs e)
+        {
+
+        }
+    }
 }

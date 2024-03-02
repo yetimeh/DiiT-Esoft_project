@@ -116,5 +116,20 @@ namespace esoftprojecttest
 		{
 
         }
+
+        private void update_pro_pic(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+		private void cancel_click (object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void register_click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

@@ -24,8 +24,8 @@
                         <DataGridTextColumn Header="Purchased Price" MinWidth="150"/>
                         <DataGridTextColumn Header="PurchasedQuantity" MinWidth="110" />
                         <DataGridTextColumn Header="SellingPrice" MinWidth="150"/>
-                        <DataGridTextColumn Header="SoldQUantity" MinWidth="100" />
-                        <DataGridTextColumn Header="Total Expences" MinWidth="150"/>
+                        <DataGridTextColumn Header="Sold Quantity" MinWidth="100" />
+
                         <DataGridTextColumn Header="Profit Earned" MinWidth="150"/>
                         
                     </DataGrid.Columns>

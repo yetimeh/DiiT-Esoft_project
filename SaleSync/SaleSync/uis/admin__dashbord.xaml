@@ -24,89 +24,35 @@
 
             <StackPanel HorizontalAlignment="Center">
                 <TextBlock Text="SaleSync &#10; POS" Style="{StaticResource ResourceKey=titleText}" Foreground="#ffffff" RenderTransformOrigin="0.5,0.5" FontSize="30" Height="96"/>
-               <!-- <Button Content="Dashbord" Style="{StaticResource dashbordbuttons}"></Button> -->
+                <!-- <Button Content="Dashbord" Style="{StaticResource dashbordbuttons}"></Button> -->
                 <Button Click="admin_inventory_click" Content="Inventory" Style="{StaticResource dashbordbuttons}"></Button>
                 <Button Click="admin_history_click" Content="History" Style="{StaticResource dashbordbuttons}"></Button>
                 <Button Click="admin_my_profile_click" Content="My Profile" Style="{StaticResource dashbordbuttons}"></Button>
-                
+
             </StackPanel>
         </Border>
 
         <Border Background="#ffffff" Grid.Column="1" CornerRadius="0 10 10 0">
             <Grid>
-                <TextBlock  Text="Admin - Dashbord" Style="{StaticResource titleText}" Foreground="Black"></TextBlock>
+                <Button Click="admin_logout_click" Content="Logout" Width="200"  VerticalAlignment="Top" Style="{StaticResource dashbordbuttons}" Margin="226,318,474,0"></Button>
+                <Button Click="admin_signup_click" Content="Create a new adminstrator account" Width="NaN"  VerticalAlignment="Top" Style="{StaticResource dashbordbuttons}" Margin="502,318,136,0"></Button>
+
+                <TextBlock  Text="Admin - Dashboard" Style="{StaticResource titleText}" Foreground="Black"></TextBlock>
                 <StackPanel Margin="10 20">
-                    <DataGrid x:Name="Datagrid" IsReadOnly="True" AutoGenerateColumns="False" Margin="40" Height="300" Width="800">
-                        <DataGrid.Columns>
-                            <DataGridTextColumn Header="ItemCode" MinWidth="150" Width="*"/>
-                            <DataGridTextColumn Header="ItemName" MinWidth="200" Width="*"/>
-                            <DataGridTextColumn Header="Price" MinWidth="150"/>
-                            <DataGridTextColumn Header="Quantity" MinWidth="80" />
-                            <DataGridTextColumn Header="Total" MinWidth="80" />
-                        
-                        </DataGrid.Columns>
-                    </DataGrid>
                     <Grid>
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="0.5*"/>
                             <ColumnDefinition Width="0.5*"/>
                         </Grid.ColumnDefinitions>
-                    
 
-                        <Border>
-                            <StackPanel>
-                                <StackPanel>
-                                    <Border BorderThickness="1" BorderBrush="#707573" Margin="50 7 " CornerRadius="5">
-                                        <Grid Margin="7 5">
-                                            <Grid.ColumnDefinitions>
-                                                <ColumnDefinition Width="auto"/>
-                                                <ColumnDefinition Width="*"/>
-                                            </Grid.ColumnDefinitions>
-                                            <Grid.RowDefinitions>
-                                                <RowDefinition Height="Auto"/>
-                                                <RowDefinition Height="Auto"/>
-                                            </Grid.RowDefinitions>
-
-                                            <TextBlock x:Name="itemcode_text" MouseDown="itemcode_text_MouseDown" Text="Item Code" Style="{StaticResource hintText }"/>
-                                            <TextBox x:Name="ICode_txt" TextChanged="ICode_txt_textchanged" Style="{StaticResource textBox}"/>
-                                        </Grid>
-                                    </Border>
-                                </StackPanel>
-
-                                <StackPanel>
-                                    <Border BorderThickness="1" BorderBrush="#707573" Margin="50 7 " CornerRadius="5">
-                                        <Grid Margin="7 5">
-                                            <Grid.ColumnDefinitions>
-                                                <ColumnDefinition Width="auto"/>
-                                                <ColumnDefinition Width="*"/>
-                                            </Grid.ColumnDefinitions>
-                                            <Grid.RowDefinitions>
-                                                <RowDefinition Height="Auto"/>
-                                                <RowDefinition Height="Auto"/>
-                                            </Grid.RowDefinitions>
-
-                                            <TextBlock x:Name="quantity_text" MouseDown="quantity_text_MouseDown" Text="Quantity" Style="{StaticResource hintText }"/>
-                                            <TextBox x:Name="quantity_txt"  TextChanged="quantity_txt_TextChanged"  Style="{StaticResource textBox}"/>
-                                        </Grid>
-                                    </Border>
-                                </StackPanel>
+                        <TextBlock  TextWrapping="WrapWithOverflow" Grid.ColumnSpan="2" Margin="119,140,101,-289" FontSize="30">
+                                Welcome admin {username}! 
+                                You can select your action from the list to the left!
+                        </TextBlock>
 
 
-
-
-
-                            </StackPanel>
-                        </Border>
-
-                        <Border Grid.Column="1">
-                            <StackPanel>
-
-                                <Button Click="admin_enter_click"  Content="Enter" Width="200"   VerticalAlignment="Top" Style="{StaticResource dashbordbuttons}" Margin="10"></Button>
-                                <Button Click="admin_sell_click" Content="Sell" Width="200"  VerticalAlignment="Top" Style="{StaticResource dashbordbuttons}" Margin="10"></Button>
-                            </StackPanel>
-                        </Border>
                     </Grid>
-                   <!-- <StackPanel>
+                    <!-- <StackPanel>
                         <TextBox x:Name="ItemCode" Width="200" Height="30" HorizontalAlignment="Left" Margin="30 8" ></TextBox>
                         <TextBox x:Name="ItyemName" Width="200" Height="30" HorizontalAlignment="Left"  Margin="30 8"></TextBox>
                         <TextBox x:Name="price" Width="200" Height="30"  HorizontalAlignment="Left"  Margin="30 8"></TextBox>
@@ -117,9 +63,9 @@
                     </StackPanel>  -->
                 </StackPanel>
             </Grid>
-            
-            
+
+
         </Border>
-        
+
     </Grid>
 </Window>
