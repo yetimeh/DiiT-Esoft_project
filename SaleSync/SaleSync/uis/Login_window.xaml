@@ -57,23 +57,25 @@
                     </Border>
                 </StackPanel>
 
-                
+                <StackPanel>
                     <Border BorderThickness="1" BorderBrush="#acd0af" Margin="70 7" CornerRadius="5">
-                    <Grid Margin="7 9">
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="auto"/>
-                            <ColumnDefinition Width="*"/>
-                        </Grid.ColumnDefinitions>
-                        <Grid.RowDefinitions>
-                            <RowDefinition Height="Auto"/>
-                            <RowDefinition Height="Auto"/>
-                        </Grid.RowDefinitions>
+                        <Grid Margin="7 9">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="auto"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                            </Grid.RowDefinitions>
 
-                        <Image Source="/Resources/off.png" Height="20"/>
-                        <TextBlock x:Name="textPassword" MouseDown="textPassword_MouseDown"  Text="Password" Style="{StaticResource hintText }"/>
-                        <PasswordBox x:Name="txtPassword"  PasswordChanged="txtPassword_PasswordChanged" Style="{StaticResource textBox}"/>
-                    </Grid>
-                </Border>
+                            <Image Source="/Resources/off.png" Height="20"/>
+                            <TextBlock x:Name="textPassword" MouseDown="textPassword_MouseDown"  Text="Password" Style="{StaticResource hintText }"/>
+                            <PasswordBox x:Name="txtPassword"  PasswordChanged="txtPassword_PasswordChanged" Style="{StaticResource textBox}"/>
+                        </Grid>
+                    </Border>
+                </StackPanel>
+                
                 
                 <Button Content="LOGIN" Style="{StaticResource mainbutton}" Click="Login_Click"/>
                 <Button Content="SIGNUP"  Click="SignUp_Click" Style="{StaticResource mainbutton}"/>

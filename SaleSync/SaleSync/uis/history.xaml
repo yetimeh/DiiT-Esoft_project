@@ -1,0 +1,12 @@
+﻿<Window x:Class="SaleSync.uis.history"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SaleSync.uis"
+        mc:Ignorable="d"
+        Title="history" Height="723" Width="1300">
+    <Grid>
+        
+    </Grid>
+</Window>

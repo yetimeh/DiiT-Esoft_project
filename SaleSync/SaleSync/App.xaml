@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:local="clr-namespace:esoftprojecttest"
 
-             StartupUri="uis/Login_window.xaml">
+             StartupUri="Dashbord_Screen.xaml">
 
     <Application.Resources>
 
@@ -38,7 +38,7 @@
             <Setter Property="Grid.Column" Value="1"/>
             <Setter Property="Panel.ZIndex" Value="1"/>
             <Setter Property="Margin" Value="10 0 0 0"/>
-            <Setter Property="Foreground" Value="#acb0af"/>
+            <Setter Property="Foreground" Value="#707573"/>
 
         </Style>
 
@@ -102,7 +102,7 @@
             <Setter Property="Template">
                 <Setter.Value>
                     <ControlTemplate TargetType="Button">
-                        <Border Background="{TemplateBinding Background}" CornerRadius="10 " BorderThickness="1" BorderBrush="#0099cc" Padding="15">
+                        <Border Background="{TemplateBinding Background}" CornerRadius="10 " BorderThickness="1" BorderBrush="#0099cc" Padding="7">
                             <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
 
                         </Border>

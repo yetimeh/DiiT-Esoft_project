@@ -1,0 +1,211 @@
+﻿<Window x:Class="SaleSync.uis.inventory"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" WindowStartupLocation="CenterScreen"  Background="Transparent" 
+        Title="inventory" Height="723" Width="1300">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1.5*"/>
+            <ColumnDefinition Width="0.5*"/>
+        </Grid.ColumnDefinitions>
+        <Border Background="#ffffff" Grid.ColumnSpan="2" RenderTransformOrigin="0.5,0.5">
+            <Border.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleX="0.16"/>
+                    <RotateTransform/>
+                    <TranslateTransform X="0.997"/>
+                </TransformGroup>
+            </Border.RenderTransform>
+            <StackPanel>
+                <Grid>
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1.5*" />
+                        <ColumnDefinition Width=".5*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Border Background="#ffffff" Grid.Column="0" Height="500">
+                        <StackPanel >
+                            <TextBlock Text=" SALESYNC INVENTORY" Style="{StaticResource titleText}" Foreground="Black"></TextBlock>
+
+                            <DataGrid x:Name="inventory_table" Margin="4" Height="436" Width="921" >
+                                <DataGrid.Columns>
+                                    <DataGridCheckBoxColumn Header="ItemCode" Binding="{Binding Path=ItemCode}" MinWidth="200" />
+                                    <DataGridCheckBoxColumn Header="ItemName" Binding="{Binding Path=ItemName}" MinWidth="200" Width="*"/>
+                                    <DataGridCheckBoxColumn Header="Quantity" Binding="{Binding Path=Quantity }" MinWidth="120"/>
+                                    <DataGridCheckBoxColumn Header="Selling Price" Binding="{Binding Path=Price}" MinWidth="150"/>
+                                    <DataGridCheckBoxColumn Header="Purchase Price" Binding="{Binding Path=PurchasePrice}" MinWidth="120" />
+                                </DataGrid.Columns>
+                            </DataGrid>
+                        </StackPanel>
+                    </Border>
+
+                </Grid>
+
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="0.2*"/>
+                        <ColumnDefinition Width="0.2*"/>
+                        <ColumnDefinition Width="0.3*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Border Grid.Column="0" Background="#ffffff">
+                        <StackPanel>
+
+                            <StackPanel>
+                                <Border BorderThickness="1" BorderBrush="#707573" Margin="50 7 " CornerRadius="5">
+                                    <Grid Margin="7 5">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="auto"/>
+                                            <ColumnDefinition Width="*"/>
+                                        </Grid.ColumnDefinitions>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="Auto"/>
+                                            <RowDefinition Height="Auto"/>
+                                        </Grid.RowDefinitions>
+
+                                        <TextBlock x:Name="itemcode_text" MouseDown="itemcode_text_MouseDown" Text="Item Code" Style="{StaticResource hintText }"/>
+                                        <TextBox x:Name="ICode_txt" TextChanged="ICode_txt_textchanged" Style="{StaticResource textBox}"/>
+                                    </Grid>
+                                </Border>
+                            </StackPanel>
+
+                            <StackPanel>
+                                <Border BorderThickness="1" BorderBrush="#707573" Margin="50 7 " CornerRadius="5">
+                                    <Grid Margin="7 5">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="auto"/>
+                                            <ColumnDefinition Width="*"/>
+                                        </Grid.ColumnDefinitions>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="Auto"/>
+                                            <RowDefinition Height="Auto"/>
+                                        </Grid.RowDefinitions>
+
+                                        <TextBlock x:Name="itemname_text" MouseDown="itemname_text_MouseDown"  Text="Item Name" Style="{StaticResource hintText }"/>
+                                        <TextBox x:Name="IName_txt" TextChanged="IName_txt_TextChanged"  Style="{StaticResource textBox}"/>
+                                    </Grid>
+                                </Border>
+                            </StackPanel>
+
+                            <StackPanel>
+                                <Border BorderThickness="1" BorderBrush="#707573" Margin="50 7 " CornerRadius="5">
+                                    <Grid Margin="7 5">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="auto"/>
+                                            <ColumnDefinition Width="*"/>
+                                        </Grid.ColumnDefinitions>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="Auto"/>
+                                            <RowDefinition Height="Auto"/>
+                                        </Grid.RowDefinitions>
+
+                                        <TextBlock x:Name="quantity_text" MouseDown="quantity_text_MouseDown" Text="Quantity" Style="{StaticResource hintText }"/>
+                                        <TextBox x:Name="quantity_txt"  TextChanged="quantity_txt_TextChanged"  Style="{StaticResource textBox}"/>
+                                    </Grid>
+                                </Border>
+                            </StackPanel>
+
+                            <StackPanel>
+                                <Border BorderThickness="1" BorderBrush="#707573" Margin="50 7 " CornerRadius="5">
+                                    <Grid Margin="7 5">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="auto"/>
+                                            <ColumnDefinition Width="*"/>
+                                        </Grid.ColumnDefinitions>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="Auto"/>
+                                            <RowDefinition Height="Auto"/>
+                                        </Grid.RowDefinitions>
+
+                                        <TextBlock x:Name="purchase_price_text" MouseDown="purchase_price_text_MouseDown" Text="Purchase Price" Style="{StaticResource hintText }"/>
+                                        <TextBox x:Name="purchase_price_txt" TextChanged="purchase_price_txt_TextChanged"  Style="{StaticResource textBox}"/>
+                                    </Grid>
+                                </Border>
+                            </StackPanel>
+
+                        </StackPanel>
+
+                    </Border>
+
+                    <Border Grid.Column="1" >
+                        <StackPanel >
+                            <StackPanel>
+                                <Border BorderThickness="1" BorderBrush="#707573" Margin="50 7 " CornerRadius="5">
+                                    <Grid Margin="7 5">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="auto"/>
+                                            <ColumnDefinition Width="*"/>
+                                        </Grid.ColumnDefinitions>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="Auto"/>
+                                            <RowDefinition Height="Auto"/>
+                                        </Grid.RowDefinitions>
+
+                                        <TextBlock x:Name="selling_price_text" MouseDown="selling_price_text_MouseDown"  Text="Selling Price" Style="{StaticResource hintText }"/>
+                                        <TextBox x:Name="selling_price_txt"  TextChanged="selling_price_txt_TextChanged" Style="{StaticResource textBox}"/>
+                                    </Grid>
+                                </Border>
+                            </StackPanel>
+
+                            <Button Content="Enter Data" Style="{StaticResource dashbordbuttons}" FontSize="15" Width="131" Height="39" Margin="5"></Button>
+                            <Button Content="Clear Fields" Style="{StaticResource dashbordbuttons}" FontSize="15" Width="131" Height="39" Margin="5"></Button>
+
+
+
+                        </StackPanel>
+
+                    </Border>
+                    <Border Grid.Column="2">
+                        <DockPanel>
+                            <Button HorizontalAlignment="Center" DockPanel.Dock="Right" VerticalAlignment="Bottom"  Content="Exit" Style="{StaticResource dashbordbuttons}" FontSize="17" Width="150" Height="39" Margin="20"></Button>
+                            <Button HorizontalAlignment="Right" VerticalAlignment="Bottom"  Content="Add to Database" Style="{StaticResource dashbordbuttons}" FontSize="17" Width="150" Height="39" Margin="20"></Button>
+                        </DockPanel>
+
+
+                    </Border>
+                </Grid>
+            </StackPanel>
+        </Border>
+        <Border Grid.Column="1">
+            <StackPanel Margin="10 40">
+
+                <StackPanel>
+                    <Border BorderThickness="1" BorderBrush="#707573" Margin="50 7 " CornerRadius="5">
+                        <Grid Margin="7 5">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="auto"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                            </Grid.RowDefinitions>
+
+                            <TextBlock x:Name="cost_text" MouseDown="cost_text_MouseDown" Text="Cost Input" Style="{StaticResource hintText }"/>
+                            <TextBox x:Name="cost_txt" TextChanged="cost_txt_TextChanged"  Style="{StaticResource textBox}"/>
+                        </Grid>
+                    </Border>
+                </StackPanel>
+
+                <Button Content="Total Expences" Style="{StaticResource dashbordbuttons}" FontSize="13" Width="131" Height="39" Margin="5"></Button>
+                
+                <DockPanel>
+                    <TextBlock DockPanel.Dock="Left"  Text="Expences : " FontSize="20" Style="{StaticResource hintText}"></TextBlock>
+                    <TextBlock DockPanel.Dock="Right" x:Name="expences_txt" Text="00.00" FontSize="20" Style="{StaticResource hintText}"></TextBlock>
+                   
+                </DockPanel>
+
+                
+            </StackPanel>
+        </Border>
+        
+
+
+
+
+    </Grid>
+</Window>

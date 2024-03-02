@@ -23,3 +23,31 @@ C:\Users\senuk\source\repos\SaleSync\SaleSync\obj\Debug\net8.0-windows\SaleSync.
 C:\Users\senuk\source\repos\SaleSync\SaleSync\obj\Debug\net8.0-windows\SaleSync.genruntimeconfig.cache
 C:\Users\senuk\source\repos\SaleSync\SaleSync\obj\Debug\net8.0-windows\ref\SaleSync.dll
 C:\Users\senuk\source\repos\SaleSync\SaleSync\obj\Debug\net8.0-windows\App.baml
+C:\Users\AZ\Documents\C# projects\esoftproject\DiiT-Esoft_project\SaleSync\SaleSync\bin\Debug\net8.0-windows\SaleSync.exe
+C:\Users\AZ\Documents\C# projects\esoftproject\DiiT-Esoft_project\SaleSync\SaleSync\bin\Debug\net8.0-windows\SaleSync.deps.json
+C:\Users\AZ\Documents\C# projects\esoftproject\DiiT-Esoft_project\SaleSync\SaleSync\bin\Debug\net8.0-windows\SaleSync.runtimeconfig.json
+C:\Users\AZ\Documents\C# projects\esoftproject\DiiT-Esoft_project\SaleSync\SaleSync\bin\Debug\net8.0-windows\SaleSync.dll
+C:\Users\AZ\Documents\C# projects\esoftproject\DiiT-Esoft_project\SaleSync\SaleSync\bin\Debug\net8.0-windows\SaleSync.pdb
+C:\Users\AZ\Documents\C# projects\esoftproject\DiiT-Esoft_project\SaleSync\SaleSync\obj\Debug\net8.0-windows\Dashbord_Screen.g.cs
+C:\Users\AZ\Documents\C# projects\esoftproject\DiiT-Esoft_project\SaleSync\SaleSync\obj\Debug\net8.0-windows\uis\Login_window.g.cs
+C:\Users\AZ\Documents\C# projects\esoftproject\DiiT-Esoft_project\SaleSync\SaleSync\obj\Debug\net8.0-windows\uis\SignUp_window.g.cs
+C:\Users\AZ\Documents\C# projects\esoftproject\DiiT-Esoft_project\SaleSync\SaleSync\obj\Debug\net8.0-windows\App.g.cs
+C:\Users\AZ\Documents\C# projects\esoftproject\DiiT-Esoft_project\SaleSync\SaleSync\obj\Debug\net8.0-windows\SaleSync_MarkupCompile.cache
+C:\Users\AZ\Documents\C# projects\esoftproject\DiiT-Esoft_project\SaleSync\SaleSync\obj\Debug\net8.0-windows\SaleSync_MarkupCompile.lref
+C:\Users\AZ\Documents\C# projects\esoftproject\DiiT-Esoft_project\SaleSync\SaleSync\obj\Debug\net8.0-windows\App.baml
+C:\Users\AZ\Documents\C# projects\esoftproject\DiiT-Esoft_project\SaleSync\SaleSync\obj\Debug\net8.0-windows\Dashbord_Screen.baml
+C:\Users\AZ\Documents\C# projects\esoftproject\DiiT-Esoft_project\SaleSync\SaleSync\obj\Debug\net8.0-windows\uis\Login_window.baml
+C:\Users\AZ\Documents\C# projects\esoftproject\DiiT-Esoft_project\SaleSync\SaleSync\obj\Debug\net8.0-windows\uis\SignUp_window.baml
+C:\Users\AZ\Documents\C# projects\esoftproject\DiiT-Esoft_project\SaleSync\SaleSync\obj\Debug\net8.0-windows\SaleSync.g.resources
+C:\Users\AZ\Documents\C# projects\esoftproject\DiiT-Esoft_project\SaleSync\SaleSync\obj\Debug\net8.0-windows\SaleSync.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\AZ\Documents\C# projects\esoftproject\DiiT-Esoft_project\SaleSync\SaleSync\obj\Debug\net8.0-windows\SaleSync.AssemblyInfoInputs.cache
+C:\Users\AZ\Documents\C# projects\esoftproject\DiiT-Esoft_project\SaleSync\SaleSync\obj\Debug\net8.0-windows\SaleSync.AssemblyInfo.cs
+C:\Users\AZ\Documents\C# projects\esoftproject\DiiT-Esoft_project\SaleSync\SaleSync\obj\Debug\net8.0-windows\SaleSync.csproj.CoreCompileInputs.cache
+C:\Users\AZ\Documents\C# projects\esoftproject\DiiT-Esoft_project\SaleSync\SaleSync\obj\Debug\net8.0-windows\SaleSync.sourcelink.json
+C:\Users\AZ\Documents\C# projects\esoftproject\DiiT-Esoft_project\SaleSync\SaleSync\obj\Debug\net8.0-windows\SaleSync.dll
+C:\Users\AZ\Documents\C# projects\esoftproject\DiiT-Esoft_project\SaleSync\SaleSync\obj\Debug\net8.0-windows\refint\SaleSync.dll
+C:\Users\AZ\Documents\C# projects\esoftproject\DiiT-Esoft_project\SaleSync\SaleSync\obj\Debug\net8.0-windows\SaleSync.pdb
+C:\Users\AZ\Documents\C# projects\esoftproject\DiiT-Esoft_project\SaleSync\SaleSync\obj\Debug\net8.0-windows\SaleSync.genruntimeconfig.cache
+C:\Users\AZ\Documents\C# projects\esoftproject\DiiT-Esoft_project\SaleSync\SaleSync\obj\Debug\net8.0-windows\ref\SaleSync.dll
+C:\Users\AZ\Documents\C# projects\esoftproject\DiiT-Esoft_project\SaleSync\SaleSync\obj\Debug\net8.0-windows\uis\inventory.g.cs
+C:\Users\AZ\Documents\C# projects\esoftproject\DiiT-Esoft_project\SaleSync\SaleSync\obj\Debug\net8.0-windows\uis\inventory.baml
