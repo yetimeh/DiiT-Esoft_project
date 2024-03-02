@@ -7,15 +7,24 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="uis\cashier_dashbord.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="uis\history.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="uis\inventory.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="uis\profile_page.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Page Update="Dashbord_Screen.xaml">
+    <Page Update="uis\cashier_dashbord.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="uis\admin__dashbord.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="uis\history.xaml">
@@ -25,6 +34,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="uis\Login_window.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="uis\profile_page.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="uis\SignUp_window.xaml">

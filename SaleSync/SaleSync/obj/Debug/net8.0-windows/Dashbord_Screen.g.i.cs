@@ -93,7 +93,7 @@ namespace esoftprojecttest {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/SaleSync;V1.0.0.0;component/dashbord_screen.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/SaleSync;component/dashbord_screen.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\Dashbord_Screen.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

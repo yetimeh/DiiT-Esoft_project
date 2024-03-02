@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:local="clr-namespace:esoftprojecttest"
 
-             StartupUri="Dashbord_Screen.xaml">
+             StartupUri="uis/admin__dashbord.xaml">
 
     <Application.Resources>
 
@@ -89,6 +89,25 @@
 
                 </Trigger>
             </Style.Triggers>
+
+        </Style>
+
+        <Style x:Key="imgLogout" TargetType="Image">
+            <Setter Property="Width" Value="30"/>
+            <Setter Property="Height" Value="30"/>
+            
+            <Setter Property="Margin" Value="0 13 13 0"/>
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="RenderTransform">
+                        <Setter.Value>
+                            <ScaleTransform ScaleX="1.1" ScaleY="1.1"/>
+                        </Setter.Value>
+                    </Setter>
+
+                </Trigger>
+            </Style.Triggers>
+
 
         </Style>
 

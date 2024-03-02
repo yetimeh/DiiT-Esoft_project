@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
 C:\Users\AZ\Documents\C# projects\esoftproject\DiiT-Esoft_project\SaleSync\SaleSync\App.xaml
-51515441124
+72147082560
 
-11-2069249716
+131961252460
 198-688555687
-Dashbord_Screen.xaml;uis\history.xaml;uis\inventory.xaml;uis\Login_window.xaml;uis\SignUp_window.xaml;
+uis\admin__dashbord.xaml;uis\cashier_dashbord.xaml;uis\history.xaml;uis\inventory.xaml;uis\Login_window.xaml;uis\profile_page.xaml;uis\SignUp_window.xaml;
 
-True
+False
 

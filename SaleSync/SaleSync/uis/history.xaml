@@ -4,9 +4,65 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SaleSync.uis"
-        mc:Ignorable="d"
+        mc:Ignorable="d"  WindowStyle="None" AllowsTransparency="True" WindowStartupLocation="CenterScreen"  Background="Transparent" 
+        
         Title="history" Height="723" Width="1300">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1.5*"/>
+            <RowDefinition Height=".5*"/>
+        </Grid.RowDefinitions>
+
+        <Image Source="../Resources/close.png" Grid.Column="1" Panel.ZIndex="1"  Style="{StaticResource imgClose}" RenderTransformOrigin="0.473,0.558"></Image>
+
+        <Border CornerRadius="10 10 0 0 " Background="#ffffff" Grid.Row="0" >
+            <StackPanel>
+                <DataGrid x:Name="sold_items_table" Margin="50 10" Height="500">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="ItemCode" MinWidth="150"/>
+                        <DataGridTextColumn Header="ItemName" MinWidth="150"/>
+                        <DataGridTextColumn Header="Purchased Price" MinWidth="150"/>
+                        <DataGridTextColumn Header="PurchasedQuantity" MinWidth="110" />
+                        <DataGridTextColumn Header="SellingPrice" MinWidth="150"/>
+                        <DataGridTextColumn Header="SoldQUantity" MinWidth="100" />
+                        <DataGridTextColumn Header="Total Expences" MinWidth="150"/>
+                        <DataGridTextColumn Header="Profit Earned" MinWidth="150"/>
+                        
+                    </DataGrid.Columns>
+                </DataGrid>
+            </StackPanel>            
+        </Border>
+
+        <Border CornerRadius="0 0 10 10 " Background="#ffffff" Grid.Row="1">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1.5*"/>
+                    <ColumnDefinition Width="5.*"/>
+                </Grid.ColumnDefinitions>
+
+                <Border Grid.Column="0">
+                    <StackPanel>
+                        <TextBlock Text="Select Month : " Style="{StaticResource normalText}" Foreground="Black"></TextBlock>
+                        <ComboBox Margin="20" Width="150" Height="30">
+                            <ComboBoxItem Content="January"/>
+                            <ComboBoxItem Content="February"/>
+                            <ComboBoxItem Content="March"/>
+                            <ComboBoxItem Content="April"/>
+                            <ComboBoxItem Content="May"/>
+                            <ComboBoxItem Content="June"/>
+                            <ComboBoxItem Content="July"/>
+                            <ComboBoxItem Content="August"/>
+                            <ComboBoxItem Content="September"/>
+                            <ComboBoxItem Content="Octomber"/>
+                            <ComboBoxItem Content="November"/>
+                            <ComboBoxItem Content="December"/>
+                        </ComboBox>
+                    </StackPanel>
+                   
+                </Border>
+            </Grid>
+            
+            
+        </Border>
     </Grid>
 </Window>

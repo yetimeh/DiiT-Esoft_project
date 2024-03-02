@@ -13,6 +13,9 @@
             <ColumnDefinition Width="1.8*"/>
         </Grid.ColumnDefinitions>
 
+
+        <Image Source="../Resources/close.png" Grid.Column="1" Panel.ZIndex="1"  Style="{StaticResource imgClose}" RenderTransformOrigin="0.473,0.558"></Image>
+
         <Border CornerRadius="10 0 0 10">
             <Border.Background>
                 <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
@@ -33,7 +36,7 @@
                 </StackPanel>
 
                 <StackPanel HorizontalAlignment="Center">
-                    <Image x:Name="proPic" Source="Resources/profile.png" Width="150" Height="150"></Image>
+                    <Image x:Name="proPic" Source="\Resources/profile.png" Width="150" Height="150"></Image>
                     <Button Content="Upload Image" Margin="70 10 " Style="{StaticResource mainbutton}" Width="150" Height="50" ></Button>
                 </StackPanel>
 

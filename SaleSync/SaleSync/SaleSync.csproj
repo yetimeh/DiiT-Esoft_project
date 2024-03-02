@@ -13,6 +13,7 @@
     <None Remove="Resources\cloud-computing.png" />
     <None Remove="Resources\id-card.png" />
     <None Remove="Resources\location-pin.png" />
+    <None Remove="Resources\logout.png" />
     <None Remove="Resources\mail.png" />
     <None Remove="Resources\off.png" />
     <None Remove="Resources\phone-call.png" />
@@ -31,6 +32,9 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Resources\location-pin.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\logout.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Resources\mail.png">
