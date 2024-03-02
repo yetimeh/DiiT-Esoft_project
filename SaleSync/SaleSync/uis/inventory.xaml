@@ -154,8 +154,8 @@
                                 </Border>
                             </StackPanel>
 
-                            <Button Content="Enter Data" Style="{StaticResource dashbordbuttons}" FontSize="15" Width="131" Height="39" Margin="5"></Button>
-                            <Button Content="Clear Fields" Style="{StaticResource dashbordbuttons}" FontSize="15" Width="131" Height="39" Margin="5"></Button>
+                            <Button Click="inventory_enter_data_click" Content="Enter Data" Style="{StaticResource dashbordbuttons}" FontSize="15" Width="131" Height="39" Margin="5"></Button>
+                            <Button Click="inventory_clear_fields_click" Content="Clear Fields" Style="{StaticResource dashbordbuttons}" FontSize="15" Width="131" Height="39" Margin="5"></Button>
 
 
 
@@ -164,8 +164,8 @@
                     </Border>
                     <Border Grid.Column="2">
                         <DockPanel>
-                            <Button HorizontalAlignment="Center" DockPanel.Dock="Right" VerticalAlignment="Bottom"  Content="Exit" Style="{StaticResource dashbordbuttons}" FontSize="17" Width="150" Height="39" Margin="20"></Button>
-                            <Button HorizontalAlignment="Right" VerticalAlignment="Bottom"  Content="Add to Database" Style="{StaticResource dashbordbuttons}" FontSize="17" Width="150" Height="39" Margin="20"></Button>
+                            <Button Click="inventory_exit_click" HorizontalAlignment="Center" DockPanel.Dock="Right" VerticalAlignment="Bottom"  Content="Exit" Style="{StaticResource dashbordbuttons}" FontSize="17" Width="150" Height="39" Margin="20"></Button>
+                            <Button Click="inventory_add_to_database_click" HorizontalAlignment="Right" VerticalAlignment="Bottom"  Content="Add to Database" Style="{StaticResource dashbordbuttons}" FontSize="17" Width="150" Height="39" Margin="20"></Button>
                         </DockPanel>
 
 
@@ -194,7 +194,7 @@
                     </Border>
                 </StackPanel>
 
-                <Button Content="Total Expences" Style="{StaticResource dashbordbuttons}" FontSize="13" Width="131" Height="39" Margin="5"></Button>
+                <Button Click="total_expences_click" Content="Total Expences" Style="{StaticResource dashbordbuttons}" FontSize="13" Width="131" Height="39" Margin="5"></Button>
                 
                 <DockPanel>
                     <TextBlock DockPanel.Dock="Left"  Text="Expences : " FontSize="20" Style="{StaticResource hintText}"></TextBlock>

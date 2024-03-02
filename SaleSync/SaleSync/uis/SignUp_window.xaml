@@ -37,7 +37,7 @@
 
                 <StackPanel HorizontalAlignment="Center">
                     <Image x:Name="proPic" Source="\Resources/profile.png" Width="150" Height="150"></Image>
-                    <Button Content="Upload Image" Margin="70 10 " Style="{StaticResource mainbutton}" Width="150" Height="50" ></Button>
+                    <Button Content="Upload Image" Click="update_pro_pic" Margin="70 10 " Style="{StaticResource mainbutton}" Width="150" Height="50" ></Button>
                 </StackPanel>
 
                 
@@ -136,8 +136,8 @@
                 </StackPanel>
 
                 <DockPanel HorizontalAlignment="Center">
-                    <Button Style="{StaticResource mainbutton}" Content="Cancle" Margin="50 10 " Height="50"></Button>
-                    <Button Style="{StaticResource mainbutton}" Content="Register" Margin="50 10 "></Button>
+                    <Button Style="{StaticResource mainbutton}" Click="calcle_click" Content="Cancle" Margin="50 10 " Height="50"></Button>
+                    <Button Style="{StaticResource mainbutton}" Click="register_click" Content="Register" Margin="50 10 "></Button>
                 </DockPanel> 
                     
 

@@ -25,9 +25,9 @@
             <StackPanel HorizontalAlignment="Center">
                 <TextBlock Text="SaleSync &#10; POS" Style="{StaticResource ResourceKey=titleText}" Foreground="#ffffff" RenderTransformOrigin="0.5,0.5" FontSize="30" Height="96"/>
                <!-- <Button Content="Dashbord" Style="{StaticResource dashbordbuttons}"></Button> -->
-                <Button Content="Inventory" Style="{StaticResource dashbordbuttons}"></Button>
-                <Button Content="History" Style="{StaticResource dashbordbuttons}"></Button>
-                <Button Content="My Profile" Style="{StaticResource dashbordbuttons}"></Button>
+                <Button Click="admin_inventory_click" Content="Inventory" Style="{StaticResource dashbordbuttons}"></Button>
+                <Button Click="admin_history_click" Content="History" Style="{StaticResource dashbordbuttons}"></Button>
+                <Button Click="admin_my_profile_click" Content="My Profile" Style="{StaticResource dashbordbuttons}"></Button>
                 
             </StackPanel>
         </Border>
@@ -101,8 +101,8 @@
                         <Border Grid.Column="1">
                             <StackPanel>
 
-                                <Button Content="Enter" Width="200"   VerticalAlignment="Top" Style="{StaticResource dashbordbuttons}" Margin="10"></Button>
-                                <Button Content="Sell" Width="200"  VerticalAlignment="Top" Style="{StaticResource dashbordbuttons}" Margin="10"></Button>
+                                <Button Click="admin_enter_click"  Content="Enter" Width="200"   VerticalAlignment="Top" Style="{StaticResource dashbordbuttons}" Margin="10"></Button>
+                                <Button Click="admin_sell_click" Content="Sell" Width="200"  VerticalAlignment="Top" Style="{StaticResource dashbordbuttons}" Margin="10"></Button>
                             </StackPanel>
                         </Border>
                     </Grid>
