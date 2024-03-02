@@ -57,3 +57,17 @@ C:\Users\AZ\Documents\C# projects\esoftproject\DiiT-Esoft_project\SaleSync\SaleS
 C:\Users\AZ\Documents\C# projects\esoftproject\DiiT-Esoft_project\SaleSync\SaleSync\obj\Debug\net8.0-windows\uis\cashier_dashbord.g.cs
 C:\Users\AZ\Documents\C# projects\esoftproject\DiiT-Esoft_project\SaleSync\SaleSync\obj\Debug\net8.0-windows\uis\admin__dashbord.baml
 C:\Users\AZ\Documents\C# projects\esoftproject\DiiT-Esoft_project\SaleSync\SaleSync\obj\Debug\net8.0-windows\uis\cashier_dashbord.baml
+C:\Users\senuk\Documents\Code\esoft-diit-final-project\SaleSync\SaleSync\obj\Debug\net8.0-windows\uis\inventory.baml
+C:\Users\senuk\Documents\Code\esoft-diit-final-project\SaleSync\SaleSync\obj\Debug\net8.0-windows\uis\admin__dashbord.g.cs
+C:\Users\senuk\Documents\Code\esoft-diit-final-project\SaleSync\SaleSync\obj\Debug\net8.0-windows\uis\cashier_dashbord.g.cs
+C:\Users\senuk\Documents\Code\esoft-diit-final-project\SaleSync\SaleSync\obj\Debug\net8.0-windows\uis\history.g.cs
+C:\Users\senuk\Documents\Code\esoft-diit-final-project\SaleSync\SaleSync\obj\Debug\net8.0-windows\uis\inventory.g.cs
+C:\Users\senuk\Documents\Code\esoft-diit-final-project\SaleSync\SaleSync\obj\Debug\net8.0-windows\uis\Login_window.g.cs
+C:\Users\senuk\Documents\Code\esoft-diit-final-project\SaleSync\SaleSync\obj\Debug\net8.0-windows\uis\profile_page.g.cs
+C:\Users\senuk\Documents\Code\esoft-diit-final-project\SaleSync\SaleSync\obj\Debug\net8.0-windows\uis\SignUp_window.g.cs
+C:\Users\senuk\Documents\Code\esoft-diit-final-project\SaleSync\SaleSync\obj\Debug\net8.0-windows\App.g.cs
+C:\Users\senuk\Documents\Code\esoft-diit-final-project\SaleSync\SaleSync\obj\Debug\net8.0-windows\SaleSync_MarkupCompile.cache
+C:\Users\senuk\Documents\Code\esoft-diit-final-project\SaleSync\SaleSync\obj\Debug\net8.0-windows\SaleSync_MarkupCompile.lref
+C:\Users\senuk\Documents\Code\esoft-diit-final-project\SaleSync\SaleSync\obj\Debug\net8.0-windows\SaleSync.dll
+C:\Users\senuk\Documents\Code\esoft-diit-final-project\SaleSync\SaleSync\obj\Debug\net8.0-windows\refint\SaleSync.dll
+C:\Users\senuk\Documents\Code\esoft-diit-final-project\SaleSync\SaleSync\obj\Debug\net8.0-windows\SaleSync.pdb
