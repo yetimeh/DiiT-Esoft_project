@@ -33,9 +33,10 @@ namespace esoftprojecttest
 			InitializeComponent();
 		}
 
-    
+		
 
-        private void fullname_MouseDown(object sender, MouseButtonEventArgs e)
+
+		private void fullname_MouseDown(object sender, MouseButtonEventArgs e)
 		{
 			FName.Focus();
 		}

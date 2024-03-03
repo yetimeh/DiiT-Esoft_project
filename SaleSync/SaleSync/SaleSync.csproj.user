@@ -19,6 +19,9 @@
     <Compile Update="uis\profile_page.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="uis\users_window.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Page Update="uis\cashier_dashbord.xaml">
@@ -40,6 +43,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="uis\SignUp_window.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="uis\users_window.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

@@ -3,7 +3,11 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:local="clr-namespace:esoftprojecttest"
 
+<<<<<<< HEAD
              StartupUri="uis/Login_window.xaml">
+=======
+             StartupUri="uis/users_window.xaml">
+>>>>>>> ce184074fb9565f58e2b01312f488dfcee808724
 
     <Application.Resources>
 
