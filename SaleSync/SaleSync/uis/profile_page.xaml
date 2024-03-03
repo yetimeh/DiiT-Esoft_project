@@ -41,7 +41,7 @@
                     <TextBlock x:Name="user_phonenumber" HorizontalAlignment="Left" DockPanel.Dock="Left" Text="" Style="{StaticResource normalText}"   Foreground="Black"/>
                 </DockPanel>
 
-                
+                <Button Margin="10 10" Content="Back" Style="{StaticResource dashbordbuttons}"></Button>
 
 
             </StackPanel>

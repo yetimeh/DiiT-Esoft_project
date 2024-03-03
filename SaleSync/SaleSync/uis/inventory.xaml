@@ -34,13 +34,13 @@
                         <StackPanel >
                             <TextBlock Text=" SALESYNC INVENTORY" Style="{StaticResource titleText}" Foreground="Black"></TextBlock>
 
-                            <DataGrid x:Name="inventory_table" Margin="4" Height="436" Width="921" >
+                            <DataGrid x:Name="inventory_table" Margin="4" Height="436" Width="921"  >
                                 <DataGrid.Columns>
-                                    <DataGridCheckBoxColumn Header="ItemCode" Binding="{Binding Path=ItemCode}" MinWidth="200" />
-                                    <DataGridCheckBoxColumn Header="ItemName" Binding="{Binding Path=ItemName}" MinWidth="200" Width="*"/>
-                                    <DataGridCheckBoxColumn Header="Quantity" Binding="{Binding Path=Quantity }" MinWidth="120"/>
-                                    <DataGridCheckBoxColumn Header="Selling Price" Binding="{Binding Path=Price}" MinWidth="150"/>
-                                    <DataGridCheckBoxColumn Header="Purchase Price" Binding="{Binding Path=PurchasePrice}" MinWidth="120" />
+                                    <DataGridTextColumn Header="ItemCode" Binding="{Binding ItemCode, Mode=OneWay}" MinWidth="200" />
+                                    <DataGridTextColumn Header="ItemName" Binding="{Binding ItemName, Mode=OneWay}" MinWidth="200" Width="*"/>
+                                    <DataGridTextColumn Header="Quantity" Binding="{Binding Quantity, Mode=OneWay}" MinWidth="120"/>
+                                    <DataGridTextColumn Header="Selling Price" Binding="{Binding SellingPrice, Mode=OneWay}" MinWidth="150"/>
+                                    <DataGridTextColumn Header="Purchase Price" Binding="{Binding PurchasePrice , Mode=OneWay}" MinWidth="120" />
                                 </DataGrid.Columns>
                             </DataGrid>
                         </StackPanel>

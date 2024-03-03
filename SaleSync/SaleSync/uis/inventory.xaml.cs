@@ -15,24 +15,24 @@ using System.Windows.Shapes;
 
 namespace SaleSync.uis
 {
-    /// <summary>
-    /// Interaction logic for inventory.xaml
-    /// </summary>
-    public partial class inventory : Window
-    {
+	/// <summary>
+	/// Interaction logic for inventory.xaml
+	/// </summary>
+	public partial class inventory : Window
+	{
 
 		private DatabaseAPI database = new DatabaseAPI();
-        public inventory()
-        {
-            InitializeComponent();
-        }
-        public void Window_MouseDown(object sender, MouseButtonEventArgs e)
-        {
-            if (Mouse.LeftButton == MouseButtonState.Pressed)
-                this.DragMove();
-        }
+		public inventory()
+		{
+			InitializeComponent();
+		}
+		public void Window_MouseDown(object sender, MouseButtonEventArgs e)
+		{
+			if (Mouse.LeftButton == MouseButtonState.Pressed)
+				this.DragMove();
+		}
 
-		
+
 		//item code
 		private void itemcode_text_MouseDown(object sender, MouseButtonEventArgs e)
 		{
@@ -127,28 +127,113 @@ namespace SaleSync.uis
 			}
 		}
 
-        private void inventory_enter_data_click(object sender, RoutedEventArgs e)
-        {
-			database.add_inventory(
-				
-				)
+		private void clear_all_fields()
+		{
+			ICode_txt.Clear();
+			IName_txt.Clear();
+			quantity_txt.Clear();
+			selling_price_txt.Clear();
+			purchase_price_txt.Clear();
+		}
+
+		private void inventory_enter_data_click(object sender, RoutedEventArgs e)
+		{
+
+			if (ICode_txt.Text == "" || IName_txt.Text == "" || quantity_txt.Text == "" || selling_price_txt.Text == "" || selling_price_txt.Text == "")
+			{
+				MessageBox.Show("You didn't enter all the required fields!", "Error", MessageBoxButton.OK);
+				return;
+			}
+
+
+			inventory_table.Items.Add(new { ItemCode = ICode_txt.Text,
+				ItemName = IName_txt.Text,
+				Quantity = quantity_txt.Text,
+				SellingPrice = selling_price_txt.Text, PurchasePrice = purchase_price_txt.Text });
+
+		}
+
+		private void inventory_clear_fields_click(object sender, RoutedEventArgs e)
+		{
+			clear_all_fields();
+
+		}
+
+		private void inventory_exit_click(object sender, RoutedEventArgs e)
+		{
+
+		}
+
+		private void inventory_add_to_database_click(object sender, RoutedEventArgs e)
+		{
+
+
+			foreach (var item in inventory_table.Items)
+			{
+				string item_code = "a";
+				string item_name = "a";
+				int quantity = 0;
+				int selling_price = 0;
+				int purchase_price = 0;
+
+				var properties = item.GetType().GetProperties();
+				foreach (var property in properties)
+				{
+					string propertyName = property.Name;
+					string propertyValue = property.GetValue(item).ToString();
+
+
+
+					switch (propertyName)
+					{
+						case "ItemCode":
+							item_code = propertyValue;
+							break;
+
+						case "ItemName":
+							item_name = propertyValue;
+							break;
+
+						case "Quantity":
+							quantity = Convert.ToInt32(propertyValue);
+							break;
+
+						case "SellingPrice":
+							selling_price = Convert.ToInt32(propertyValue);
+							break;
+
+						case "PurchasePrice":
+							purchase_price = Convert.ToInt32(propertyValue);
+							break;
+
+						default: break;
+					}
+				}
+
+				bool result_value = database.add_inventory(
+					item_code: item_code,
+					item_name: item_name,
+					quantity: quantity,
+					purchase_price: purchase_price,
+					selling_price: selling_price
+
+					);
+
+				if (result_value) { MessageBox.Show("Data added succesfully!"); }
+			}
+
+
+
+
+
+		}
+
+
+	
         }
 
-        private void inventory_clear_fields_click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void inventory_exit_click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void inventory_add_to_database_click(object sender, RoutedEventArgs e)
-        {
-
-        }
+      
     }
 
    
-}
+

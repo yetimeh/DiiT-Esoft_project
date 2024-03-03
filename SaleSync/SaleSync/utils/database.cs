@@ -75,7 +75,7 @@ namespace esoftprojecttest.utils
         {
 
             SqlCommand cmd = new SqlCommand("INSERT INTO stocks (item_code, item_name, quantity, selling_price, purchase_price) VALUES ('"+item_code+"', '"+item_name+"', "+quantity+", "+selling_price+", "+purchase_price+")", con);
-            con.Open( );
+            con.Open();
 
             try
             {

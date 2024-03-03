@@ -30,8 +30,11 @@ namespace SaleSync.uis
 			ICode_txt.Focus();
 		}
 
-
-		private void ICode_txt_textchanged(object sender, TextChangedEventArgs e)
+        private void close_img(object sender, MouseButtonEventArgs e)
+        {
+            Application.Current.Shutdown();
+        }
+        private void ICode_txt_textchanged(object sender, TextChangedEventArgs e)
 		{
 			if (!string.IsNullOrEmpty(ICode_txt.Text) && ICode_txt.Text.Length > 0)
 			{

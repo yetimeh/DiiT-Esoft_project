@@ -16,6 +16,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using static System.Net.Mime.MediaTypeNames;
 
+
 namespace esoftprojecttest
 {
 	/// <summary>
@@ -32,12 +33,16 @@ namespace esoftprojecttest
 			InitializeComponent();
 		}
 
-		private void fullname_MouseDown(object sender, MouseButtonEventArgs e)
+    
+
+        private void fullname_MouseDown(object sender, MouseButtonEventArgs e)
 		{
 			FName.Focus();
 		}
 
-		private void FName_TextChanged(object sender, TextChangedEventArgs e)
+        
+
+        private void FName_TextChanged(object sender, TextChangedEventArgs e)
 		{
 			if (!string.IsNullOrEmpty(FName.Text) && FName.Text.Length > 0)
 			{
@@ -164,8 +169,9 @@ namespace esoftprojecttest
 			}
         }
 
-       
+        
 
-       
+
+
     }
 }

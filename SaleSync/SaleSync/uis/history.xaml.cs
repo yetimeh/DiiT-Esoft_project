@@ -23,5 +23,10 @@ namespace SaleSync.uis
         {
             InitializeComponent();
         }
+
+        private void close_btn(object sender, MouseButtonEventArgs e)
+        {
+            Application.Current.Shutdown();
+        }
     }
 }

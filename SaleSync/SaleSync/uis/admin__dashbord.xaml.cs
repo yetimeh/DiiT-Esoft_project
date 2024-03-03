@@ -25,6 +25,10 @@ namespace esoftprojecttest
         }
 
 
+        private void close_img(object sender, MouseButtonEventArgs e)
+        {
+            Application.Current.Shutdown();
+        }
 
         private void admin_inventory_click(object sender, RoutedEventArgs e)
         {
