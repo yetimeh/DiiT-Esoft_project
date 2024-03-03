@@ -1,4 +1,5 @@
-﻿using System;
+﻿using esoftprojecttest.utils;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,6 +20,8 @@ namespace SaleSync.uis
     /// </summary>
     public partial class inventory : Window
     {
+
+		private DatabaseAPI database = new DatabaseAPI();
         public inventory()
         {
             InitializeComponent();
@@ -126,7 +129,9 @@ namespace SaleSync.uis
 
         private void inventory_enter_data_click(object sender, RoutedEventArgs e)
         {
-
+			database.add_inventory(
+				
+				)
         }
 
         private void inventory_clear_fields_click(object sender, RoutedEventArgs e)

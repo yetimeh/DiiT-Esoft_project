@@ -17,9 +17,9 @@ namespace SaleSync.uis
     /// <summary>
     /// Interaction logic for admin_dashbord.xaml
     /// </summary>
-    public partial class admin_dashbord : Window
+    public partial class cashier_dashbord : Window
     {
-        public admin_dashbord()
+        public cashier_dashbord()
         {
             InitializeComponent();
         }
@@ -68,7 +68,7 @@ namespace SaleSync.uis
 
         private void sell_click(object sender, RoutedEventArgs e)
         {
-
+			
         }
 
         private void enter_click(object sender, RoutedEventArgs e)

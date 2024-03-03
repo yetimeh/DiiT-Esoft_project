@@ -1,4 +1,6 @@
-﻿using System.Diagnostics.Eventing.Reader;
+﻿using esoftprojecttest.utils;
+using SaleSync.uis;
+using System.Diagnostics.Eventing.Reader;
 using System.Text;
 using System.Windows;
 using System.Windows.Controls;
@@ -17,6 +19,8 @@ namespace esoftprojecttest
 	/// </summary>
 	public partial class Login_window : Window
 	{
+		private DatabaseAPI database = new DatabaseAPI();
+
 		public Login_window()
 		{
 			InitializeComponent();
@@ -62,18 +66,30 @@ namespace esoftprojecttest
 			Application.Current.Shutdown();
 		}
 
-
-		private void SignIn_Click(object sender, RoutedEventArgs e)
-		{
-			//SIGNIN_window SIGNIN_window = new SIGNIN_window();
-			//SIGNIN_window.Show();
-			//this.Close();
-		}
 	
 
         private void Login_Click(object sender, RoutedEventArgs e)
         {
-			MessageBox.Show(txtID.Text + txtPassword.Password);
+			var login = database.login(txtID.Text, txtPassword.Password);
+
+			if (login == null)
+			{
+				MessageBox.Show("You haven't created an account yet or the credentials you entered are wrong! Click the sign up button if you want to create an account.", "Error :(", MessageBoxButton.OK);
+				return;
+			}
+
+			this.Hide();
+			if (login["admin"] == true)
+			{
+				Dashbord_Screen admin = new Dashbord_Screen();
+				admin.Show();
+			} else
+			{
+				cashier_dashbord cashier_Dashbord = new cashier_dashbord();
+				cashier_Dashbord.Show();
+			}
+
+			
         }
 
         private void SignUp_Click(object sender, RoutedEventArgs e)

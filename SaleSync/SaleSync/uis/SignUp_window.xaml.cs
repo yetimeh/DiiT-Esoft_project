@@ -1,4 +1,6 @@
-﻿using System;
+﻿using esoftprojecttest.utils;
+using Microsoft.Win32;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -21,12 +23,16 @@ namespace esoftprojecttest
 	/// </summary>
 	public partial class SignUp_window: Window
 	{
-		public SignUp_window()
+
+		private DatabaseAPI database = new DatabaseAPI();
+		private bool is_admin;
+		public SignUp_window(bool is_admin = false)
 		{
+            this.is_admin = is_admin;
 			InitializeComponent();
 		}
 
-		private void firstname_MouseDown(object sender, MouseButtonEventArgs e)
+		private void fullname_MouseDown(object sender, MouseButtonEventArgs e)
 		{
 			FName.Focus();
 		}
@@ -35,28 +41,27 @@ namespace esoftprojecttest
 		{
 			if (!string.IsNullOrEmpty(FName.Text) && FName.Text.Length > 0)
 			{
-				firstname.Visibility = Visibility.Collapsed;
+				fullname.Visibility = Visibility.Collapsed;
 			}
 			else
 			{
-				firstname.Visibility = Visibility.Visible;
+				fullname.Visibility = Visibility.Visible;
 			}
 		}
 
-		private void lastname_MouseDown(object sender, MouseButtonEventArgs e)
+		private void password_text_MouseDown(object sender, MouseButtonEventArgs e)
 		{
-			LName.Focus();
+			password_txt.Focus();
 		}
 
-		private void LName_TextChanged(object sender, TextChangedEventArgs e)
+		private void password_txt_TextChanged(object sender, TextChangedEventArgs e)
 		{
-			if (!string.IsNullOrEmpty(LName.Text) && LName.Text.Length > 0)
+			if (!string.IsNullOrEmpty(password_text.Text) && password_text.Text.Length > 0)
 			{
-				lastname.Visibility = Visibility.Collapsed;
+				password_text.Visibility = Visibility.Collapsed;
 			}
-			else
-			{
-				lastname.Visibility = Visibility.Visible;
+			else { 
+				password_text.Visibility = Visibility.Visible;
 			}
 		}
 
@@ -77,20 +82,20 @@ namespace esoftprojecttest
 			}
 		}
 
-		private void locationtext_MouseDown(object sender, MouseButtonEventArgs e)
+		private void username_MouseDown(object sender, MouseButtonEventArgs e)
 		{
-			locationpin.Focus();
+			uname.Focus();
 		}
 
-		private void locationpin_TextChanged(object sender, TextChangedEventArgs e)
+		private void uname_TextChanged(object sender, TextChangedEventArgs e)
 		{
-			if (!string.IsNullOrEmpty(locationpin.Text) && locationpin.Text.Length > 0)
+			if (!string.IsNullOrEmpty(uname.Text) && uname.Text.Length > 0)
 			{
-				locationtext.Visibility = Visibility.Collapsed;
+				username.Visibility = Visibility.Collapsed;
 			}
 			else
 			{
-				locationtext.Visibility = Visibility.Visible;
+				username.Visibility = Visibility.Visible;
 			}
 		}
 
@@ -112,24 +117,55 @@ namespace esoftprojecttest
 
 		}
 
-		private void Button_Click(object sender, RoutedEventArgs e)
-		{
-
-        }
+		private string imageSource;
 
         private void update_pro_pic(object sender, RoutedEventArgs e)
         {
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            openFileDialog.Filter = "Image files (*.png)|*.png";
+
+			openFileDialog.ShowDialog();
+			imageSource = openFileDialog.FileName;
+
+			proPic.Source = new BitmapImage(new Uri($"{openFileDialog.FileName}", UriKind.Absolute)); // update UI image
+
+
+
 
         }
 
-		private void cancel_click (object sender, RoutedEventArgs e)
-        {
+		private void cancel_click(object sender, RoutedEventArgs e)
+		{
+			this.Hide();
+			Login_window login_window = new Login_window();
 
-        }
+			login_window.Show();
+		}
 
         private void register_click(object sender, RoutedEventArgs e)
         {
+			bool result = database.create_user(
+					username: uname.Text,
+					password: password_txt.Text,
+					fullname: FName.Text,
+					nic: Ncard.Text,
+					phoneNumber: Pnumber.Text,
+					imagePath: imageSource,
+					admin: is_admin == true ? "yes" : "no"
 
+			); 
+
+			if (result == true)
+			{
+				this.Hide();
+				Login_window login = new Login_window();
+
+				login.Show();
+			}
         }
+
+       
+
+       
     }
 }

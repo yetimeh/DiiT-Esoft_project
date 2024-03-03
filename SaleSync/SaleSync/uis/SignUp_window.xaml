@@ -40,8 +40,25 @@
                     <Button Content="Upload Image" Click="update_pro_pic" Margin="70 10 " Style="{StaticResource mainbutton}" Width="150" Height="50" ></Button>
                 </StackPanel>
 
-                
-                
+
+                <StackPanel>
+                    <Border BorderThickness="1" BorderBrush="#acb0af" Margin="200 9 " CornerRadius="5">
+                        <Grid Margin="7 9">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="auto"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                            </Grid.RowDefinitions>
+                            <Image Source="/Resources/profile.png" Height="20"/>
+                            <TextBlock x:Name="username" MouseDown="username_MouseDown" Text="Username" Style="{StaticResource hintText }"/>
+                            <TextBox x:Name="uname"  TextChanged="uname_TextChanged"  Style="{StaticResource textBox}"/>
+                        </Grid>
+                    </Border>
+                </StackPanel>
+
                 <StackPanel>
                     <Border BorderThickness="1" BorderBrush="#acb0af" Margin="200 15 " CornerRadius="5">
                         <Grid Margin="7 9">
@@ -54,7 +71,7 @@
                                 <RowDefinition Height="Auto"/>
                             </Grid.RowDefinitions>
                             <Image Source="/Resources/user.png" Height="20"/>
-                            <TextBlock x:Name="firstname" MouseDown="firstname_MouseDown" Text="First Name" Style="{StaticResource hintText }"/>
+                            <TextBlock x:Name="fullname" MouseDown="fullname_MouseDown" Text="Full Name" Style="{StaticResource hintText }"/>
                             <TextBox x:Name="FName" TextChanged="FName_TextChanged"  Style="{StaticResource textBox}"/>
                         </Grid>
                     </Border>
@@ -71,9 +88,9 @@
                                 <RowDefinition Height="Auto"/>
                                 <RowDefinition Height="Auto"/>
                             </Grid.RowDefinitions>
-                            <Image Source="/Resources/user.png" Height="20"/>
-                            <TextBlock x:Name="lastname" MouseDown="lastname_MouseDown" Text="Last Name" Style="{StaticResource hintText }"/>
-                            <TextBox x:Name="LName" TextChanged="LName_TextChanged"  Style="{StaticResource textBox}"/>
+                            <Image Source="/Resources/off.png" Height="20"/>
+                            <TextBlock x:Name="password_text" MouseDown="password_text_MouseDown" Text="Password" Style="{StaticResource hintText }"/>
+                            <TextBox x:Name="password_txt" TextChanged="password_txt_TextChanged"  Style="{StaticResource textBox}"/>
                         </Grid>
                     </Border>
                 </StackPanel>
@@ -96,23 +113,7 @@
                     </Border>
                 </StackPanel>
 
-                <StackPanel>
-                    <Border BorderThickness="1" BorderBrush="#acb0af" Margin="200 9 " CornerRadius="5">
-                        <Grid Margin="7 9">
-                            <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="auto"/>
-                                <ColumnDefinition Width="*"/>
-                            </Grid.ColumnDefinitions>
-                            <Grid.RowDefinitions>
-                                <RowDefinition Height="Auto"/>
-                                <RowDefinition Height="Auto"/>
-                            </Grid.RowDefinitions>
-                            <Image Source="/Resources/location-pin.png" Height="20"/>
-                            <TextBlock x:Name="locationtext" MouseDown="locationtext_MouseDown" Text="Location" Style="{StaticResource hintText }"/>
-                            <TextBox x:Name="locationpin"  TextChanged="locationpin_TextChanged"  Style="{StaticResource textBox}"/>
-                        </Grid>
-                    </Border>
-                </StackPanel>
+                
 
                 <StackPanel/>
 

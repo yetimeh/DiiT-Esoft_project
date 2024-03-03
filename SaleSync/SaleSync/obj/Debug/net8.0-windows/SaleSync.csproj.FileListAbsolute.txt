@@ -91,3 +91,11 @@ C:\Users\senuk\Documents\Code\esoft-diit-final-project\SaleSync\SaleSync\obj\Deb
 C:\Users\senuk\Documents\Code\esoft-diit-final-project\SaleSync\SaleSync\obj\Debug\net8.0-windows\SaleSync.sourcelink.json
 C:\Users\senuk\Documents\Code\esoft-diit-final-project\SaleSync\SaleSync\obj\Debug\net8.0-windows\SaleSync.genruntimeconfig.cache
 C:\Users\senuk\Documents\Code\esoft-diit-final-project\SaleSync\SaleSync\obj\Debug\net8.0-windows\ref\SaleSync.dll
+C:\Users\senuk\Documents\Code\esoft-diit-final-project\SaleSync\SaleSync\obj\Debug\net8.0-windows\SaleSync.csproj.AssemblyReference.cache
+C:\Users\senuk\Documents\Code\esoft-diit-final-project\SaleSync\SaleSync\bin\Debug\net8.0-windows\System.Data.SqlClient.dll
+C:\Users\senuk\Documents\Code\esoft-diit-final-project\SaleSync\SaleSync\bin\Debug\net8.0-windows\runtimes\win-arm64\native\sni.dll
+C:\Users\senuk\Documents\Code\esoft-diit-final-project\SaleSync\SaleSync\bin\Debug\net8.0-windows\runtimes\win-x64\native\sni.dll
+C:\Users\senuk\Documents\Code\esoft-diit-final-project\SaleSync\SaleSync\bin\Debug\net8.0-windows\runtimes\win-x86\native\sni.dll
+C:\Users\senuk\Documents\Code\esoft-diit-final-project\SaleSync\SaleSync\bin\Debug\net8.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\senuk\Documents\Code\esoft-diit-final-project\SaleSync\SaleSync\bin\Debug\net8.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\senuk\Documents\Code\esoft-diit-final-project\SaleSync\SaleSync\obj\Debug\net8.0-windows\SaleSync.csproj.CopyComplete
