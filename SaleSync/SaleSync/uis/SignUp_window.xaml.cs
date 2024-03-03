@@ -149,6 +149,9 @@ namespace esoftprojecttest
 
         private void register_click(object sender, RoutedEventArgs e)
         {
+
+				if (uname.Text == "" || password_txt.Text == "" || FName.Text == "" || Ncard.Text == "" || Pnumber.Text == "") { MessageBox.Show("Please make sure you enter all the fields!"); return; }
+
 			bool result = database.create_user(
 					username: uname.Text,
 					password: password_txt.Text,

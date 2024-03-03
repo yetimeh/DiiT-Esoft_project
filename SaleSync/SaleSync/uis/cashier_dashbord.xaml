@@ -36,13 +36,13 @@
             <Grid>
                 <TextBlock  Text="Cashier - Dashbord" Style="{StaticResource titleText}" Foreground="Black"></TextBlock>
                 <StackPanel Margin="10 20">
-                    <DataGrid x:Name="Datagrid" IsReadOnly="True" AutoGenerateColumns="False" Margin="40" Height="300" Width="800">
+                    <DataGrid x:Name="cashier_data" IsReadOnly="True" AutoGenerateColumns="False" Margin="40" Height="300" Width="800" >
                         <DataGrid.Columns>
-                            <DataGridTextColumn Header="ItemCode" MinWidth="150" Width="*"/>
-                            <DataGridTextColumn Header="ItemName" MinWidth="200" Width="*"/>
-                            <DataGridTextColumn Header="Price" MinWidth="150"/>
-                            <DataGridTextColumn Header="Quantity" MinWidth="80" />
-                            <DataGridTextColumn Header="Total" MinWidth="80" />
+                            <DataGridTextColumn Header="ItemCode" Binding="{Binding ItemCode, Mode=OneWay}" MinWidth="150" Width="*"/>
+                            <DataGridTextColumn Header="ItemName"  Binding="{Binding ItemName, Mode=OneWay}" MinWidth="200" Width="*"/>
+                            <DataGridTextColumn Header="Price"  Binding="{Binding Price, Mode=OneWay}" MinWidth="150"/>
+                            <DataGridTextColumn Header="Quantity"  Binding="{Binding Quantity, Mode=OneWay}" MinWidth="80" />
+                            <DataGridTextColumn Header="Total"  Binding="{Binding Total, Mode=OneWay}" MinWidth="80" />
 
                         </DataGrid.Columns>
                     </DataGrid>

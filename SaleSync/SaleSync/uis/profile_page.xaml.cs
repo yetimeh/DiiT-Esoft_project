@@ -19,9 +19,13 @@ namespace SaleSync.uis
     /// </summary>
     public partial class profile_page : Window
     {
-        public profile_page()
+        private Dictionary<string, dynamic> user;
+        public profile_page(Dictionary<string, dynamic> user)
         {
+            this.user = user;
             InitializeComponent();
+
+
         }
     }
 }

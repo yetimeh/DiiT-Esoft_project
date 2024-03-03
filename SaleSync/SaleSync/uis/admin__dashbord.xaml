@@ -35,12 +35,11 @@
         <Border Background="#ffffff" Grid.Column="1" CornerRadius="0 10 10 0">
             <Grid>
                 <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" >
-                    <TextBlock FontSize="30">
-                        addfhascjbasciSMLKVDDCWHDIDFIQUEHFOQWGFQ
+                    <TextBlock x:Name="welcome_text" FontSize="30" TextWrapping="Wrap">
                     </TextBlock>
                     <DockPanel HorizontalAlignment="Center" VerticalAlignment="Center"> 
-                        <Button Margin="10 10" Content="Logout" Style="{StaticResource dashbordbuttons}"></Button>
-                        <Button Margin="10 10"  Content="Create new Admin Account" Style="{StaticResource dashbordbuttons}"></Button>
+                        <Button Margin="10 10" Content="Logout" Style="{StaticResource dashbordbuttons}" Click="admin_logout_click"></Button>
+                        <Button Margin="10 10"  Content="Create new Admin Account" Style="{StaticResource dashbordbuttons}" Click="admin_signup_click"></Button>
                     </DockPanel>
                     
                 </StackPanel>

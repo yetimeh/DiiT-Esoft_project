@@ -81,11 +81,11 @@ namespace esoftprojecttest
 			this.Hide();
 			if (login["admin"] == true)
 			{
-				Dashbord_Screen admin = new Dashbord_Screen();
+				Dashbord_Screen admin = new Dashbord_Screen(user: login);
 				admin.Show();
 			} else
 			{
-				cashier_dashbord cashier_Dashbord = new cashier_dashbord();
+				cashier_dashbord cashier_Dashbord = new cashier_dashbord(user: login);
 				cashier_Dashbord.Show();
 			}
 

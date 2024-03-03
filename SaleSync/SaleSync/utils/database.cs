@@ -94,6 +94,38 @@ namespace esoftprojecttest.utils
             return true;
         }
 
+        public dynamic[] get_stock(string itemCode)
+        {
+            SqlCommand cmd = new SqlCommand("SELECT * FROM stocks WHERE CONVERT(VARCHAR, item_code) = '"+itemCode+"'",con);
+
+            con.Open();
+
+            try
+            {
+                cmd.ExecuteNonQuery();
+
+
+                SqlDataReader reader = cmd.ExecuteReader();
+
+                if (reader.Read() == false) { con.Close(); return null; }
+
+                return
+                [
+                    reader["item_code"].ToString(),
+                    Convert.ToInt32(reader["selling_price"]),
+                ];
+
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+                MessageBox.Show($"An error occured when fetching data {ex}");
+
+            } 
+            finally { con.Close();  }
+
+        }
+
         
     }
 }

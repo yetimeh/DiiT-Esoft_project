@@ -1,4 +1,5 @@
-﻿using esoftprojecttest.utils;
+﻿using esoftprojecttest;
+using esoftprojecttest.utils;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -22,11 +23,18 @@ namespace SaleSync.uis
 	{
 
 		private DatabaseAPI database = new DatabaseAPI();
-		public inventory()
+		private Dictionary<string, dynamic> user;
+		public inventory(Dictionary<string, dynamic> user)
 		{
+			this.user = user;
 			InitializeComponent();
 		}
-		public void Window_MouseDown(object sender, MouseButtonEventArgs e)
+
+        private void close_img(object sender, MouseButtonEventArgs e)
+        {
+            Application.Current.Shutdown();
+        }
+        public void Window_MouseDown(object sender, MouseButtonEventArgs e)
 		{
 			if (Mouse.LeftButton == MouseButtonState.Pressed)
 				this.DragMove();
@@ -151,6 +159,8 @@ namespace SaleSync.uis
 				Quantity = quantity_txt.Text,
 				SellingPrice = selling_price_txt.Text, PurchasePrice = purchase_price_txt.Text });
 
+			clear_all_fields();
+
 		}
 
 		private void inventory_clear_fields_click(object sender, RoutedEventArgs e)
@@ -161,6 +171,10 @@ namespace SaleSync.uis
 
 		private void inventory_exit_click(object sender, RoutedEventArgs e)
 		{
+			this.Hide();
+
+			Dashbord_Screen admin_dashboard = new Dashbord_Screen(user);
+			admin_dashboard.Show();
 
 		}
 
@@ -170,8 +184,8 @@ namespace SaleSync.uis
 
 			foreach (var item in inventory_table.Items)
 			{
-				string item_code = "a";
-				string item_name = "a";
+				string item_code = "default_code";
+				string item_name = "default_name";
 				int quantity = 0;
 				int selling_price = 0;
 				int purchase_price = 0;
@@ -219,7 +233,11 @@ namespace SaleSync.uis
 
 					);
 
-				if (result_value) { MessageBox.Show("Data added succesfully!"); }
+				if (result_value) {
+					
+					clear_all_fields();
+					MessageBox.Show("Data added to database succesfully!"); 
+				}
 			}
 
 
