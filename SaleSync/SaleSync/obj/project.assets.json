@@ -470,19 +470,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\AZ\\.nuget\\packages\\": {}
+    "C:\\Users\\senuk\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\AZ\\Documents\\DiiT-Esoft_project\\SaleSync\\SaleSync\\SaleSync.csproj",
+      "projectUniqueName": "C:\\Users\\senuk\\Documents\\Code\\esoft-diit-final-project\\SaleSync\\SaleSync\\SaleSync.csproj",
       "projectName": "SaleSync",
-      "projectPath": "C:\\Users\\AZ\\Documents\\DiiT-Esoft_project\\SaleSync\\SaleSync\\SaleSync.csproj",
-      "packagesPath": "C:\\Users\\AZ\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\AZ\\Documents\\DiiT-Esoft_project\\SaleSync\\SaleSync\\obj\\",
+      "projectPath": "C:\\Users\\senuk\\Documents\\Code\\esoft-diit-final-project\\SaleSync\\SaleSync\\SaleSync.csproj",
+      "packagesPath": "C:\\Users\\senuk\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\senuk\\Documents\\Code\\esoft-diit-final-project\\SaleSync\\SaleSync\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\AZ\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\senuk\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

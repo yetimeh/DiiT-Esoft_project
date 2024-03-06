@@ -246,9 +246,11 @@ namespace SaleSync.uis
 
 		}
 
+        private void inventory_table_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
 
-	
         }
+    }
 
       
     }

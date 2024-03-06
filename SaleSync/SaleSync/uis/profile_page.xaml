@@ -4,7 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SaleSync.uis"
-        mc:Ignorable="d"  WindowStartupLocation="CenterScreen" WindowStyle="None"  AllowsTransparency="True" Background="Transparent"
+        mc:Ignorable="d"  WindowStartupLocation="CenterScreen" WindowStyle="None" MouseUp="close_btn" AllowsTransparency="True" Background="Transparent"
         Title="profile_page" Height="450" Width="800">
     <Grid>
         <Grid.ColumnDefinitions>
@@ -12,7 +12,8 @@
             <ColumnDefinition Width=".5*"/>
         </Grid.ColumnDefinitions>
 
-        <Image Source="../Resources/close.png" Grid.Column="1" Panel.ZIndex="1"  Style="{StaticResource imgClose}" RenderTransformOrigin="0.473,0.558"></Image>
+        <Image Source="../Resources/close.png" Grid.Column="1" Panel.ZIndex="1" 
+               Style="{StaticResource imgClose}" RenderTransformOrigin="0.473,0.558"></Image>
         
         <Border CornerRadius="10 0 0 10 " Background="#ffffff">
             <StackPanel>
@@ -26,11 +27,6 @@
                 </DockPanel>
 
                 <DockPanel Margin="20">
-                    <TextBlock Text="Location :      " Style="{StaticResource normalText}"   Foreground="Black"/>
-                    <TextBlock x:Name="user_location" HorizontalAlignment="Left" DockPanel.Dock="Left" Text="" Style="{StaticResource normalText}"   Foreground="Black"/>
-                </DockPanel>
-
-                <DockPanel Margin="20">
                     <TextBlock Text="National Identity Card(NIC)  :      " Style="{StaticResource normalText}"   Foreground="Black"/>
                     <TextBlock x:Name="user_nic" HorizontalAlignment="Left" DockPanel.Dock="Left" Text="" Style="{StaticResource normalText}"   Foreground="Black"/>
                 </DockPanel>
@@ -41,7 +37,7 @@
                     <TextBlock x:Name="user_phonenumber" HorizontalAlignment="Left" DockPanel.Dock="Left" Text="" Style="{StaticResource normalText}"   Foreground="Black"/>
                 </DockPanel>
 
-                <Button Margin="10 10" Content="Back" Style="{StaticResource dashbordbuttons}"></Button>
+                <Button Click="Back_btn" Margin="10 10" Content="Back" Style="{StaticResource dashbordbuttons}"></Button>
 
 
             </StackPanel>
@@ -49,8 +45,8 @@
 
         <Border CornerRadius="0 10 10 0 "  Height="450" Background="#ffffff" Grid.Column="1">
             <StackPanel>
-                <Image Source="\Resources/profile.png" Width="150" Height="200"/>
-                <Image VerticalAlignment="Bottom" HorizontalAlignment="Center" Source="\Resources/logout.png" Style="{StaticResource ResourceKey=imgLogout}"/>
+                <Image x:Name="proPic" Source="\Resources/profile.png" Width="150" Height="200"/>
+                <Image  VerticalAlignment="Bottom" HorizontalAlignment="Center" Source="\Resources/logout.png" Style="{StaticResource ResourceKey=imgLogout}" MouseDown="logout"/>
             </StackPanel>
            
         </Border>

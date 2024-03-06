@@ -93,7 +93,7 @@ namespace SaleSync.uis {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/SaleSync;component/uis/cashier_dashbord.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/SaleSync;V1.0.0.0;component/uis/cashier_dashbord.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\uis\cashier_dashbord.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

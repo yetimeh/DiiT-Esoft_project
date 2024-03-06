@@ -85,7 +85,7 @@ namespace esoftprojecttest {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/SaleSync;component/uis/login_window.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/SaleSync;V1.0.0.0;component/uis/login_window.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\uis\Login_window.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

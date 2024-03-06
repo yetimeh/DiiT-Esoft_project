@@ -35,7 +35,9 @@ namespace esoftprojecttest.utils
             var return_value = new Dictionary<string, dynamic>() {
                 { "full_name", reader["full_name"].ToString()},
                 {"admin", reader["admin"].ToString() == "yes" ? true : false },
-
+                {"nic", reader["nic"].ToString() },
+                {"phone_number", reader["phone_number"].ToString() },
+                {"image_path", reader["image_path"]}
 
             };
 

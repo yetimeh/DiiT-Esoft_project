@@ -34,7 +34,7 @@
                         <StackPanel >
                             <TextBlock Text=" SALESYNC INVENTORY" Style="{StaticResource titleText}" Foreground="Black"></TextBlock>
 
-                            <DataGrid x:Name="inventory_table" Margin="4" Height="436" Width="921"  >
+                            <DataGrid x:Name="inventory_table" Margin="4" Height="436" Width="921" SelectionChanged="inventory_table_SelectionChanged"  >
                                 <DataGrid.Columns>
                                     <DataGridTextColumn Header="ItemCode" Binding="{Binding ItemCode, Mode=OneWay}" MinWidth="200" />
                                     <DataGridTextColumn Header="ItemName" Binding="{Binding ItemName, Mode=OneWay}" MinWidth="200" Width="*"/>

@@ -82,6 +82,14 @@ namespace esoftprojecttest
             SignUp_window signup = new SignUp_window(is_admin: true); // Set is_admin to true since we are creating an admin account
             signup.Show();
 		}
+
+        private void admin_users_click(object sender, RoutedEventArgs e)
+        {
+            this.Hide();
+
+            users_window users = new users_window(); // Incomplete
+            users.Show();
+        }
       
     }
 }

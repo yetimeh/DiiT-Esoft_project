@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
 C:\Users\senuk\Documents\Code\esoft-diit-final-project\SaleSync\SaleSync\App.xaml
-72147082560
+81216719485
 
-131961252460
+14-891986971
 199499218208
-uis\admin__dashbord.xaml;uis\cashier_dashbord.xaml;uis\history.xaml;uis\inventory.xaml;uis\Login_window.xaml;uis\profile_page.xaml;uis\SignUp_window.xaml;
+uis\admin__dashbord.xaml;uis\cashier_dashbord.xaml;uis\history.xaml;uis\inventory.xaml;uis\Login_window.xaml;uis\profile_page.xaml;uis\SignUp_window.xaml;uis\users_window.xaml;
 
-False
+True
 

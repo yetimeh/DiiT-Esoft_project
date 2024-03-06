@@ -28,7 +28,7 @@
                 <Button Click="admin_inventory_click" Content="Inventory" Style="{StaticResource dashbordbuttons}"></Button>
                 <Button Click="admin_history_click" Content="History" Style="{StaticResource dashbordbuttons}"></Button>
                 <Button Click="admin_my_profile_click" Content="My Profile" Style="{StaticResource dashbordbuttons}"></Button>
-                <Button  Content="Users" Style="{StaticResource dashbordbuttons}"></Button>
+                <Button Click="admin_users_click" Content="Users" Style="{StaticResource dashbordbuttons}"></Button>
 
             </StackPanel>
         </Border>

@@ -143,3 +143,5 @@ C:\Users\AZ\Documents\DiiT-Esoft_project\SaleSync\SaleSync\obj\Debug\net8.0-wind
 C:\Users\AZ\Documents\DiiT-Esoft_project\SaleSync\SaleSync\obj\Debug\net8.0-windows\SaleSync.csproj.CopyComplete
 C:\Users\AZ\Documents\DiiT-Esoft_project\SaleSync\SaleSync\obj\Debug\net8.0-windows\SaleSync.genruntimeconfig.cache
 C:\Users\AZ\Documents\DiiT-Esoft_project\SaleSync\SaleSync\obj\Debug\net8.0-windows\ref\SaleSync.dll
+C:\Users\senuk\Documents\Code\esoft-diit-final-project\SaleSync\SaleSync\obj\Debug\net8.0-windows\uis\users_window.g.cs
+C:\Users\senuk\Documents\Code\esoft-diit-final-project\SaleSync\SaleSync\obj\Debug\net8.0-windows\uis\users_window.baml

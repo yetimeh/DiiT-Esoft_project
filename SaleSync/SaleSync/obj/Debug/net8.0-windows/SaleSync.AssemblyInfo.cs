@@ -14,11 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SaleSync")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-<<<<<<< HEAD
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fd02018f7e53edcadd5954c0dc07398fd43c5fe5")]
-=======
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4591d2adc8213ca7d3339fe0aa0e35f753bcd1c2")]
->>>>>>> ce184074fb9565f58e2b01312f488dfcee808724
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
 [assembly: System.Reflection.AssemblyProductAttribute("SaleSync")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SaleSync")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
